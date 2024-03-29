@@ -34,7 +34,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.namaLogo.setText(model.get(position).getNama());
         holder.logo.setImageResource(model.get(position).getLogo());
 
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +51,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             }
         });
     }
-
 
     @Override
     public int getItemCount() {
