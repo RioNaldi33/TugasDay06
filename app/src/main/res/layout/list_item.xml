@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,24 +12,27 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/logo"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/ic_launcher_background"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"
+            android:contentDescription="@string/logo" />
 
         <TextView
             android:id="@+id/nama_logo"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Nama"
+            android:text="@string/nama"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:paddingLeft="20dp"
-            android:gravity="center"/>
+            android:paddingStart="8dp"
+            android:gravity="center"
+            tools:ignore="RtlSymmetry" />
 
     </LinearLayout>
 

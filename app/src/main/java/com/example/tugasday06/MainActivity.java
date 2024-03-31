@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         getData();
 
 
-        recyclerView = findViewById(R.id.recycleview);
+        recyclerView = findViewById(R.id.recyclerview);
         adapter = new Adapter(MainActivity.this, models);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
